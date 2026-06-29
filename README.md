@@ -206,7 +206,7 @@ curl --location 'https://bybiteye.tradecode.tech/v1/integration/bybit/order/chec
       "nickname": "prod-test-counterparty",
       "fullName": "Prod Test",
       "bybitId": 111222333,
-      "bybitMask": "111***333"
+      "bybitMask": "sa8dee5d1ce*******feaecbb3958794f"
     },
     "orderInfo": {
       "id": 900000000000001001,
