@@ -359,17 +359,6 @@ curl --location 'https://bybiteye.tradecode.tech/v1/integration/bybit/order/stat
 | `70`  | Transaction Failed          |
 | `80`  | Abnormal order cancellation |
 
-Также можно передавать английские статусы:
-
-```text
-Completed
-Canceled
-Pending Payment
-Pending Coin Release
-In Progress
-Appeal In Progress
-```
-
 ## 7. Ошибки
 
 ### Не передан токен
@@ -465,4 +454,3 @@ Response:
 4. Затем подключить `/order/status-webhook`.
 5. Всегда передавать один и тот же `orderInfo.id` для одной сделки, чтобы backend обновлял существующий ордер, а не создавал новую запись.
 6. Всегда передавать `bybitUid` в корне `/order/check`. Это UID аккаунта, с которого ваша команда работает на Bybit.
-7. По возможности передавать `counterAgentInfo.bybitMask`, чтобы BybitEye мог находить Telegram blacklist/comments по маске UID.
